@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #000; /* dark base */
+  background: #000;
   color: #fff;
   line-height: 1.6;
   padding-bottom: 100px; /* space for utility bar */
@@ -128,8 +128,7 @@ body {
 .utility-bar .utility-icon img {
   width: 28px;
   height: 28px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-  transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* ---- Hover Effects ---- */
@@ -140,7 +139,6 @@ body {
 }
 
 .utility-bar .utility-icon:hover img {
-  filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(10deg) brightness(100%) contrast(100%);
   transform: scale(1.2);
   box-shadow: 0 0 10px #fff, 0 0 20px #fff;
 }
@@ -152,7 +150,6 @@ body {
 }
 
 .utility-bar .utility-icon.active img {
-  filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(10deg) brightness(100%) contrast(100%);
   transform: scale(1.2);
   box-shadow: 0 0 15px #fff, 0 0 30px #fff;
 }
