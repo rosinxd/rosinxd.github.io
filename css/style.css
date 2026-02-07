@@ -21,8 +21,10 @@ body {
   border-bottom: 2px solid #e65c00;
 }
 
+.logo-container {}
+
 .logo {
-  height: 60px;
+  height: 120px; /* scaled 2x */
   width: auto;
 }
 
@@ -128,6 +130,8 @@ body {
 .utility-bar .utility-icon img {
   width: 28px;
   height: 28px;
+  /* KEEP ORIGINAL COLORS */
+  filter: none !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
