@@ -10,7 +10,7 @@ body {
   background: #000;
   color: #fff;
   line-height: 1.6;
-  padding-bottom: 100px; /* space for utility bar */
+  padding-bottom: 120px; /* space for utility bar */
 }
 
 /* ---- Header ---- */
@@ -24,7 +24,7 @@ body {
 .logo-container {}
 
 .logo {
-  height: 150px; /* slightly bigger header logo */
+  height: 160px; /* slightly bigger header logo */
   width: auto;
 }
 
@@ -124,38 +124,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 70px;   /* bigger container */
+  height: 70px;  /* bigger container */
   border-radius: 50%;
   flex-shrink: 0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background: transparent; /* remove any background */
+  transition: transform 0.2s ease;
+  background: transparent;
 }
 
 /* Icon images */
 .utility-bar .utility-icon img {
-  width: 28px;
-  height: 28px;
+  width: 40px;   /* bigger icons */
+  height: 40px;  /* bigger icons */
   filter: none !important; /* keep original PNG colors */
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-/* Hover glow on container */
-.utility-bar .utility-icon:hover {
-  transform: scale(1.2);
-  box-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 15px #e65c00,
-    0 0 25px #e65c00;
+/* Hover glow on image */
+.utility-bar .utility-icon:hover img {
+  transform: scale(1.3);
+  filter:
+    drop-shadow(0 0 5px #fff)
+    drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 15px #e65c00)
+    drop-shadow(0 0 25px #e65c00);
 }
 
-/* Active glow on container */
-.utility-bar .utility-icon.active {
-  transform: scale(1.2);
-  box-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 15px #e65c00,
-    0 0 25px #e65c00;
+/* Active glow on image */
+.utility-bar .utility-icon.active img {
+  transform: scale(1.3);
+  filter:
+    drop-shadow(0 0 5px #fff)
+    drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 15px #e65c00)
+    drop-shadow(0 0 25px #e65c00);
 }
